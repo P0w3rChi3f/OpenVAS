@@ -44,3 +44,4 @@
 1. [Online Admin Manual](https://docs.greenbone.net/GSM-Manual/gos-6/en/introduction.html)
 2. [Kali Documentation](https://tools.kali.org/vulnerability-analysis/openvas)  
 3. [Kali Blog](https://www.kali.org/blog/configuring-and-tuning-openvas-in-kali-linux/)
+4. [ICON Cheatsheet](./Icons-Job-Aid.pdf)
