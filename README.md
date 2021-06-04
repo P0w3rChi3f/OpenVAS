@@ -45,3 +45,4 @@
 2. [Kali Documentation](https://tools.kali.org/vulnerability-analysis/openvas)  
 3. [Kali Blog](https://www.kali.org/blog/configuring-and-tuning-openvas-in-kali-linux/)
 4. [ICON Cheatsheet](./Icons-Job-Aid.pdf)
+5. [PowerPoint Presentation](https://1drv.ms/p/s!AuVRl2Nl_6Ovn09qm9buUogKTbTH?e=1sBAPb)
