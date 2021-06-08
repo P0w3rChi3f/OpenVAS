@@ -5,8 +5,8 @@
 1. NVT - Network Vunlerability Test. Scan Definitions
 2. GVM - Greenbone Vunlerability Management
 3. GSM - Greenbone Security Manager - Commercial Vulnerability Management
-4. Source Addtion - Open Source version of OpenVAS
-
+4. CPE - Common Platform Enumeration
+5. Source Addtion - Open Source version of OpenVAS
 
 ## Steps to install OpenVAS on Kali
 
@@ -31,13 +31,25 @@
 3. Change `127.0.0.1` to `0.0.0.0`
 4. Change Admin password `sudo gvmd --user=admin --new-password=PassWord12#$34`
 
+## Update NVT's
+
 ## Add targets  
 
-1. 
+1. Several ways to add targets.
+    * Configuration -> Targets
+    * Scans -> Tasks
 
 ## Scan targets
 
-## Update NVT's
+## Filter example
+
+1. CVE-2021 sort-reverse=created rows=20 first=1 - NTV Filter
+2. CVE-2021-25275 - CVE - CVE Filter
+
+## Create a Custom Security Policy
+
+1. Clone a current policy
+2. Edit the newly cloned policy to match your organization policy
 
 ## References
 
