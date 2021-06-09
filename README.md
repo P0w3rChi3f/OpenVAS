@@ -20,9 +20,15 @@
     `sudo systemctl start redis-server`
     `sudo gvm-start`
 3. Troubleshooting/optional commands  
-    `sudo runuser -u _gvm -- greenbone-nvt-sync`  
-    `sudo runuser -u _gvm -- greenbone-certdata-sync`  
-    `sudo runuser -u _gvm -- greenbone-scapdata-sync`  
+    `sudo runuser -u _gvm -- greenbone-nvt-sync`
+    `sudo runuser -u _gvm -- openvas -u`
+    `sudo runuser -u _gvm -- greenbone-feed-sync --type GVMD_DATA`  
+    `sudo runuser -u _gvm -- greenbone-feed-sync --type SCAP`  
+    `sudo runuser -u _gvm -- greenbone-feed-sync --type CERT`  
+    * Other sync commads
+        `sudo runuser -u _gvm -- greenbone-nvt-sync`  
+        `sudo runuser -u _gvm -- greenbone-certdata-sync`
+        `sudo runuser -u _gvm -- greenbone-scapdata-sync`
 
 ## Steps to make WebUI avalable to network
 
