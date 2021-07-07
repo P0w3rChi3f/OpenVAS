@@ -30,12 +30,21 @@
         `sudo runuser -u _gvm -- greenbone-certdata-sync`
         `sudo runuser -u _gvm -- greenbone-scapdata-sync`
 
-## Steps to make WebUI avalable to network
+## Steps to make WebUI available to network from a Kali install
 
 1. `cd /lib/systemd/system`  
 2. `vi greenbone-security-assistant.service`  
 3. Change `127.0.0.1` to `0.0.0.0`
 4. Change Admin password `sudo gvmd --user=admin --new-password=PassWord12#$34`
+
+## Steps to mak WebUI available to network from Greenbone Management Appliance
+
+1. `openvas-stop`
+2. `cd /lib/systemd/system`
+3. `sed -e 's/127.0.0.1/0.0.0.0/g' greenbone-security-assistant.service openvas-manager.service openvas-scanner.service -i`
+4. `gsad --listen=0.0.0.0`
+5. `openvas-start`
+6. `sudo openvasmd start`
 
 ## Update NVT's
 
